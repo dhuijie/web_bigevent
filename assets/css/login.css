@@ -1,55 +1,64 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background: url('/assets/images/login_bg.jpg') no-repeat center;
-  background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    /* cover  铺满 */
+    background-size: cover;
 }
 
 .loginAndRegBox {
-  width: 400px;
-  height: 310px;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .title-box {
-  height: 60px;
-  background: url('/assets/images/login_title.png') no-repeat center;
+    height: 60px;
+    line-height: 60px;
+    background: url('/assets/images/login_title.png') no-repeat center;
 }
 
 .reg-box {
-  display: none;
+    display: none;
 }
 
 .layui-form {
-  padding: 0 30px;
+    padding: 0 30px;
 }
 
 .links {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    /* 设置在主轴上的对齐方式 */
+    /* justify-content: space-around;平均分配剩余空间 */
+    /* justify-content: space-between;先两边贴边，在分配剩余的空间 */
+    /* flex-direction: column;主轴是y轴 */
+    /* justify-content: center;垂直居中 */
+    /* flex-wrap: wrap;换行 */
+    /* align-items: center;侧轴居中 */
+    justify-content: flex-end;
 }
 
 .links a {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .layui-form-item {
-  position: relative;
+    position: relative;
 }
 
 .layui-icon {
-  position: absolute;
-  left: 10px;
-  top: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .layui-input {
-  padding-left: 32px;
+    padding-left: 35px;
 }
